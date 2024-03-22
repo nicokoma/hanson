@@ -6,7 +6,7 @@
 @import "_colores";
 @import "_fonts";
 
-.right{
+.sello-pirqa{
     text-align: right;
 }
 
@@ -51,6 +51,10 @@
     color: $blanco;
 }
 
+.bot-menu{
+    float: right;
+}
+
 
 .home-logo{
     width: 100%;
@@ -66,6 +70,11 @@
 .slider-home{
     padding-left: 0 !important;
     padding-right: 0 !important;
+    .tit-slide{
+        color: $blanco;
+        font-size: 5em;
+        line-height: 1.2em;
+    }
 }
 
 .slider-pirqa{
@@ -73,6 +82,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: left;
+
+
+    
+}
+
+.slide1{
+    background-image: url(../assets/slide-01.jpg);
+    background-position: center center;
+    background-size: cover;
 }
 
 .cont-slide{
@@ -80,11 +98,7 @@
     margin-left: 10%;
 }
 
-.tit-slide{
-    color: $blanco;
-    font-size: 4em;
-    line-height: 1.2em;
-}
+
 
 .tit-slide-2{
     color: $negro;
@@ -127,12 +141,20 @@
     background-image: url(../assets/img-seccion-2.jpg);
     background-position: center center;
     background-size: cover;
+    height: 100vh;
+
+   
+    .tit-slide{
+        font-size: 4em;
+        color: $blanco;
+        line-height: 1.2em;
+    }
 
 
     .desc{
-        font-size: 1.3em;
+        font-size: 1.2em;
         color: $blanco;
-        line-height: 1em;
+        line-height: 1.2em;
     }
 }
 
@@ -155,10 +177,9 @@
 }
 
 .scroll-5{
-    height: 100vh;
-    img{
-        width: 80%;
-    }
+
+    padding: 2em 0;
+
 }
 
 
@@ -183,8 +204,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 100vh;
+    color: white;
+
+    .tit-slide{
+        font-size: 4.3em;
+        line-height: 1em;
+    }
+
     p{
-        color: white;
+        font-size: 1.1em;
     }
 }
 
@@ -200,6 +229,7 @@
 
 
 .scroll-8{
+    height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -207,13 +237,23 @@
     background-color: #f8b529;
     background-image: url(../assets/back-form-contacto.jpg);
     background-size: cover;
-    p{
-        font-size: 2.3em;
+
+
+    .tit-slide{
+        font-size: 2.2em;
+        color: $negro;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
         line-height: 1.2em;
+    
+
+        
     }
 
     .tit{
-        font-size: 1.3em;
+        font-size: 1.1em;
         margin: 20px 0;
     }
 
@@ -222,6 +262,9 @@
         color: #f8b529 !important;
     }
     
+    .logo-travel-contacto{
+        margin: 4em 0 0 3em;
+    }
 
 
 }
@@ -234,6 +277,9 @@
     border-left: none;
     border-right: none;
 }
+
+
+
 
 footer{
     
@@ -251,5 +297,119 @@ footer{
         justify-content: center;
         align-items: flex-start;
     }
+    
+}
+
+
+
+@media  (max-width:480px){
+.scroll-7{
+    display: none;
+}
+
+.slide1{
+    background-image: url(../assets/slide-01-mob.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.slider-home{
+    .tit-slide{
+        font-size: 2.6em;
+        line-height: 1.1em;
+    
+    }
+}
+
+
+.scroll-3{
+    height: 100vh;
+    .tit-slide{
+        font-size: 2.7em;
+    }
+
+    .desc{
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    
+}
+
+
+.cont-scroll-4{
+    p{
+        font-size: 1.2em;
+    }
+}
+
+.padding-top-bottom-seccion {
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.sello-pirqa{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.cont-scroll-5{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+    p{
+        font-size: 1.1em;
+        line-height: 1.3em;
+    }
+
+
+}
+
+.scroll-6{
+    .tit-slide{
+        font-size: 2.7em;
+        line-height: 1.1em;
+    }
+}
+
+
+.scroll-8{
+    height: 100%;
+    padding: 20px 0 ;
+
+
+
+    .tit-slide{
+        font-size: 2em;
+    }
+
+    .logo-travel-contacto{
+        margin: 0;
+    }
+
+    .form-control-pirqa {
+        width: 100%;
+    }
+    
+
+}
+
+
+footer{
+
+height: 230px;
+
+.logo-footer{
+    align-items: center;
+}
+
+.copyright-footer{
+    height: 50px;
+    align-items: center;
+}
+}
     
 }

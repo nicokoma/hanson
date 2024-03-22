@@ -19,7 +19,7 @@
   font-family: "Roboto-Bold";
   src: url("../assets/font/Roboto-Bold.ttf");
 }
-.right {
+.sello-pirqa {
   text-align: right;
 }
 
@@ -63,6 +63,10 @@
   color: white;
 }
 
+.bot-menu {
+  float: right;
+}
+
 .home-logo {
   width: 100%;
   height: 100vh;
@@ -78,6 +82,11 @@
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+.slider-home .tit-slide {
+  color: white;
+  font-size: 5em;
+  line-height: 1.2em;
+}
 
 .slider-pirqa {
   display: flex;
@@ -86,15 +95,15 @@
   align-items: left;
 }
 
+.slide1 {
+  background-image: url(../assets/slide-01.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
 .cont-slide {
   position: absolute;
   margin-left: 10%;
-}
-
-.tit-slide {
-  color: white;
-  font-size: 4em;
-  line-height: 1.2em;
 }
 
 .tit-slide-2 {
@@ -130,11 +139,17 @@
   background-image: url(../assets/img-seccion-2.jpg);
   background-position: center center;
   background-size: cover;
+  height: 100vh;
+}
+.scroll-3 .tit-slide {
+  font-size: 4em;
+  color: white;
+  line-height: 1.2em;
 }
 .scroll-3 .desc {
-  font-size: 1.3em;
+  font-size: 1.2em;
   color: white;
-  line-height: 1em;
+  line-height: 1.2em;
 }
 
 .scroll-4 p {
@@ -151,10 +166,7 @@
 }
 
 .scroll-5 {
-  height: 100vh;
-}
-.scroll-5 img {
-  width: 80%;
+  padding: 2em 0;
 }
 
 .cont-scroll-5 {
@@ -174,9 +186,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 100vh;
+  color: white;
+}
+.scroll-6 .tit-slide {
+  font-size: 4.3em;
+  line-height: 1em;
 }
 .scroll-6 p {
-  color: white;
+  font-size: 1.1em;
 }
 
 .scroll-7 {
@@ -189,6 +207,7 @@
 }
 
 .scroll-8 {
+  height: 100vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -197,17 +216,25 @@
   background-image: url(../assets/back-form-contacto.jpg);
   background-size: cover;
 }
-.scroll-8 p {
-  font-size: 2.3em;
+.scroll-8 .tit-slide {
+  font-size: 2.2em;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
   line-height: 1.2em;
 }
 .scroll-8 .tit {
-  font-size: 1.3em;
+  font-size: 1.1em;
   margin: 20px 0;
 }
 .scroll-8 .btn {
   margin-top: 2em;
   color: #f8b529 !important;
+}
+.scroll-8 .logo-travel-contacto {
+  margin: 4em 0 0 3em;
 }
 
 .form-control-pirqa {
@@ -231,6 +258,89 @@ footer .logo-footer {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+
+@media (max-width: 480px) {
+  .scroll-7 {
+    display: none;
+  }
+
+  .slide1 {
+    background-image: url(../assets/slide-01-mob.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .slider-home .tit-slide {
+    font-size: 2.6em;
+    line-height: 1.1em;
+  }
+
+  .scroll-3 {
+    height: 100vh;
+  }
+  .scroll-3 .tit-slide {
+    font-size: 2.7em;
+  }
+  .scroll-3 .desc {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+
+  .cont-scroll-4 p {
+    font-size: 1.2em;
+  }
+
+  .padding-top-bottom-seccion {
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
+
+  .sello-pirqa {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .cont-scroll-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .cont-scroll-5 p {
+    font-size: 1.1em;
+    line-height: 1.3em;
+  }
+
+  .scroll-6 .tit-slide {
+    font-size: 2.7em;
+    line-height: 1.1em;
+  }
+
+  .scroll-8 {
+    height: 100%;
+    padding: 20px 0;
+  }
+  .scroll-8 .tit-slide {
+    font-size: 2em;
+  }
+  .scroll-8 .logo-travel-contacto {
+    margin: 0;
+  }
+  .scroll-8 .form-control-pirqa {
+    width: 100%;
+  }
+
+  footer {
+    height: 230px;
+  }
+  footer .logo-footer {
+    align-items: center;
+  }
+  footer .copyright-footer {
+    height: 50px;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
